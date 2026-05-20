@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+  <rect width="1200" height="900" fill="#110f13"/>
+  <circle cx="940" cy="140" r="280" fill="#ff4fad" opacity=".25"/>
+  <circle cx="190" cy="760" r="300" fill="#d7ff6b" opacity=".16"/>
+  <g stroke="#fff4df" opacity=".22"><path d="M0 180h1200M0 360h1200M0 540h1200M0 720h1200M240 0v900M480 0v900M720 0v900M960 0v900"/></g>
+  <g font-family="Arial Black, sans-serif" fill="#fff4df"><text x="70" y="126" font-size="72">AUTHORITY</text><text x="74" y="178" font-size="24" letter-spacing="8">SIH CIVIC OPS BOARD</text></g>
+  <g transform="translate(90 270)">
+    <rect width="450" height="420" fill="#f3eadc"/><rect x="40" y="45" width="360" height="35" fill="#080708"/><rect x="40" y="115" width="270" height="22" fill="#ff9dc7"/><rect x="40" y="165" width="330" height="22" fill="#aaf5d1"/><rect x="40" y="215" width="230" height="22" fill="#d7ff6b"/>
+    <rect x="560" y="40" width="450" height="330" fill="#1d1b20" stroke="#fff4df" stroke-width="4"/><path d="M600 300l120-120 90 55 80-120 80 95" fill="none" stroke="#ff9dc7" stroke-width="10"/>
+  </g>
+</svg>

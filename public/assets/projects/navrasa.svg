@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+  <rect width="1200" height="900" fill="#1a1015"/>
+  <g transform="translate(600 470)">
+    <g fill-opacity=".82">
+      <circle r="120" fill="#ff9dc7"/><circle cx="210" r="98" fill="#d7ff6b"/><circle cx="-210" r="98" fill="#aaf5d1"/><circle cy="210" r="98" fill="#d67b54"/><circle cy="-210" r="98" fill="#fff4df"/><circle cx="150" cy="150" r="82" fill="#ff4fad"/><circle cx="-150" cy="150" r="82" fill="#f3eadc"/><circle cx="150" cy="-150" r="82" fill="#aaf5d1"/><circle cx="-150" cy="-150" r="82" fill="#d7ff6b"/>
+    </g>
+  </g>
+  <text x="76" y="125" fill="#fff4df" font-family="Arial Black, sans-serif" font-size="86">NAVRASA</text>
+  <text x="82" y="178" fill="#ff9dc7" font-family="monospace" font-size="25" letter-spacing="8">EMOTION / CULTURE / INTERACTION</text>
+</svg>

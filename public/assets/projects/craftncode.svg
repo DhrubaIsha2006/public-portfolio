@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+  <rect width="1200" height="900" fill="#080708"/>
+  <path d="M120 180h960v540H120z" fill="#fff4df"/>
+  <path d="M180 260h340v80H180zM180 382h680v26H180zM180 440h580v26H180z" fill="#080708"/>
+  <path d="M700 230l170 170-170 170M540 570L370 400l170-170" fill="none" stroke="#ff4fad" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="180" y="690" fill="#080708" font-family="Arial Black, sans-serif" font-size="62">CRAFT N CODE</text>
+  <circle cx="1010" cy="190" r="80" fill="#d7ff6b"/><circle cx="990" cy="690" r="62" fill="#aaf5d1"/>
+</svg>

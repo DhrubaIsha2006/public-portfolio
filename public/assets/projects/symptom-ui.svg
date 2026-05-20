@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+  <rect width="1200" height="900" fill="#111113"/>
+  <rect x="180" y="90" width="840" height="720" rx="48" fill="#f3eadc"/>
+  <text x="250" y="190" fill="#080708" font-family="Arial Black, sans-serif" font-size="64">SYMPTOM INPUT</text>
+  <g transform="translate(250 255)" fill="none" stroke="#080708" stroke-width="6">
+    <rect width="700" height="86" rx="24"/><rect y="125" width="700" height="86" rx="24"/><rect y="250" width="700" height="170" rx="24"/>
+  </g>
+  <g fill="#ff9dc7"><circle cx="300" cy="298" r="18"/><circle cx="300" cy="423" r="18"/><circle cx="300" cy="548" r="18"/></g>
+  <path d="M780 650c60-120 150-120 210 0" fill="none" stroke="#aaf5d1" stroke-width="24" stroke-linecap="round"/>
+</svg>

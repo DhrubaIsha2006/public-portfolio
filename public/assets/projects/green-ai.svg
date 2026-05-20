@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+  <rect width="1200" height="900" fill="#0b1510"/>
+  <path d="M0 680C240 520 420 735 660 560S990 340 1200 480v420H0z" fill="#aaf5d1" opacity=".35"/>
+  <path d="M0 760C260 610 460 790 720 650s330-90 480 20v230H0z" fill="#d7ff6b" opacity=".28"/>
+  <g fill="#fff4df" font-family="Arial Black, sans-serif"><text x="70" y="135" font-size="86">GREEN AI</text><text x="76" y="190" font-size="24" letter-spacing="8">LIGHTER COMPUTE / BETTER CHOICES</text></g>
+  <g transform="translate(120 300)" stroke="#fff4df" stroke-width="7" fill="none">
+    <rect width="360" height="260" rx="32"/><path d="M90 260v70M270 260v70M90 330h180"/>
+    <path d="M610 80c90-95 250-30 250 98 0 135-156 190-250 308-94-118-250-173-250-308 0-128 160-193 250-98z" fill="#ff9dc7" opacity=".38"/>
+  </g>
+</svg>

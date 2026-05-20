@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#07120f"/><stop offset=".55" stop-color="#17372f"/><stop offset="1" stop-color="#ff9dc7"/></linearGradient>
+    <filter id="n"><feTurbulence baseFrequency=".65" numOctaves="3"/><feColorMatrix type="saturate" values=".35"/></filter>
+  </defs>
+  <rect width="1200" height="900" fill="url(#g)"/>
+  <rect width="1200" height="900" opacity=".16" filter="url(#n)"/>
+  <g fill="none" stroke="#fff4df" stroke-width="4" opacity=".8">
+    <path d="M130 660 C280 480 420 560 560 410 S850 240 1070 350"/>
+    <path d="M130 725 C310 610 440 680 610 535 S870 420 1080 505" opacity=".4"/>
+  </g>
+  <g font-family="Arial Black, sans-serif" fill="#fff4df">
+    <text x="76" y="130" font-size="82">AETHER</text>
+    <text x="82" y="185" font-size="24" letter-spacing="9">SUSTAINABILITY COMMAND</text>
+  </g>
+  <g transform="translate(78 270)">
+    <rect width="270" height="210" rx="18" fill="#fff4df" opacity=".9"/>
+    <rect x="320" width="270" height="210" rx="18" fill="#aaf5d1" opacity=".9"/>
+    <rect x="640" width="270" height="210" rx="18" fill="#ff9dc7" opacity=".86"/>
+    <g fill="#080708" font-family="monospace" font-weight="700" font-size="28">
+      <text x="30" y="80">CO2 -18%</text><text x="350" y="80">ENERGY</text><text x="670" y="80">WASTE</text>
+      <text x="30" y="135">TREND: UP</text><text x="350" y="135">42.8 kWh</text><text x="670" y="135">LOW RISK</text>
+    </g>
+  </g>
+</svg>

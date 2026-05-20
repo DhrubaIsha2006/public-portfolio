@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #080708;
+}
+
+::selection {
+  background: #ff9dc7;
+  color: #080708;
+}
+
+.paper-texture {
+  position: relative;
+  overflow: hidden;
+}
+
+.paper-texture::after {
+  background-image:
+    linear-gradient(90deg, rgba(8, 7, 8, 0.045) 1px, transparent 1px),
+    linear-gradient(rgba(8, 7, 8, 0.04) 1px, transparent 1px),
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='paper'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23paper)' opacity='0.16'/%3E%3C/svg%3E");
+  background-size: 28px 28px, 28px 28px, 240px 240px;
+  content: '';
+  inset: 0;
+  mix-blend-mode: multiply;
+  opacity: 0.45;
+  pointer-events: none;
+  position: absolute;
+}
+
+.polaroid-card {
+  background: #f3eadc;
+  box-shadow: 0 26px 70px rgba(0, 0, 0, 0.38);
+  padding: 0.65rem;
+  position: relative;
+}
+
+.polaroid-card::before {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.45), transparent 48%);
+  content: '';
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+}
+
+.modal-link,
+.social-link {
+  align-items: center;
+  border: 1px solid rgba(8, 7, 8, 0.15);
+  border-radius: 999px;
+  display: inline-flex;
+  font-size: 0.75rem;
+  font-weight: 900;
+  gap: 0.5rem;
+  letter-spacing: 0.16em;
+  padding: 0.7rem 1rem;
+  text-transform: uppercase;
+  transition: transform 180ms ease, background 180ms ease;
+}
+
+.modal-link:hover,
+.social-link:hover {
+  background: rgba(255, 157, 199, 0.22);
+  transform: translateY(-2px);
+}
+
+.social-link {
+  border-color: rgba(255, 244, 223, 0.15);
+  color: rgba(255, 244, 223, 0.78);
+}
+
+.contact-field {
+  display: block;
+}
+
+.contact-field span {
+  color: rgba(8, 7, 8, 0.55);
+  display: block;
+  font-family: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.22em;
+  margin-bottom: 0.55rem;
+  text-transform: uppercase;
+}
+
+.contact-field input,
+.contact-field textarea {
+  background: rgba(255, 244, 223, 0.78);
+  border: 1px solid rgba(8, 7, 8, 0.14);
+  color: #080708;
+  font: inherit;
+  outline: none;
+  padding: 0.9rem 1rem;
+  width: 100%;
+}
+
+.contact-field input:focus,
+.contact-field textarea:focus {
+  border-color: #ff4fad;
+  box-shadow: 0 0 0 3px rgba(255, 79, 173, 0.18);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
