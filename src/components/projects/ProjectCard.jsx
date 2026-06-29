@@ -5,17 +5,18 @@ const tapeColors = {
   mint: 'bg-mint/80',
   blush: 'bg-blush/80',
   acid: 'bg-acid/80',
-  cream: 'bg-cream/80'
+  cream: 'bg-cream/80',
+  cyan: 'bg-cyan-200/80'
 };
 
-export default function ProjectCard({ project, index, onOpen }) {
+export default function ProjectCard({ project, index, onOpen, rotation = project.rotation }) {
   return (
     <motion.article
-      initial={{ opacity: 0, y: 40, rotate: project.rotation }}
-      whileInView={{ opacity: 1, y: 0, rotate: project.rotation }}
+      initial={{ opacity: 0, y: 40, rotate: rotation }}
+      whileInView={{ opacity: 1, y: 0, rotate: rotation }}
       viewport={{ once: true, margin: '-80px' }}
       transition={{ duration: 0.6, delay: index * 0.06 }}
-      whileHover={{ y: -16, rotate: project.rotation * 0.35, scale: 1.025 }}
+      whileHover={{ y: -16, rotate: rotation * 0.35, scale: 1.025 }}
       className="group relative"
     >
       <button

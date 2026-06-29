@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+  <defs>
+    <linearGradient id="threat" x1="0" x2="1" y1="0" y2="1">
+      <stop stop-color="#050808"/>
+      <stop offset=".55" stop-color="#101b1f"/>
+      <stop offset="1" stop-color="#aaf5d1"/>
+    </linearGradient>
+    <filter id="scan">
+      <feTurbulence baseFrequency=".58" numOctaves="3"/>
+      <feColorMatrix type="saturate" values=".25"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="900" fill="url(#threat)"/>
+  <rect width="1200" height="900" opacity=".14" filter="url(#scan)"/>
+  <g stroke="#fff4df" opacity=".15">
+    <path d="M0 180h1200M0 360h1200M0 540h1200M0 720h1200"/>
+    <path d="M240 0v900M480 0v900M720 0v900M960 0v900"/>
+  </g>
+  <g fill="#fff4df" font-family="Arial Black, sans-serif">
+    <text x="70" y="130" font-size="78">THREATEYE</text>
+    <text x="74" y="184" font-size="24" letter-spacing="8">IOT NETWORK DEFENSE</text>
+  </g>
+  <g transform="translate(120 270)">
+    <circle cx="470" cy="250" r="190" fill="none" stroke="#ff9dc7" stroke-width="10"/>
+    <circle cx="470" cy="250" r="92" fill="#ff9dc7" opacity=".28"/>
+    <path d="M470 60v380M280 250h380M335 115l270 270M605 115L335 385" stroke="#fff4df" stroke-width="5" opacity=".55"/>
+    <rect x="690" y="70" width="310" height="320" rx="24" fill="#f3eadc"/>
+    <g fill="#080708" font-family="monospace" font-size="22" font-weight="800">
+      <text x="724" y="126">LIVE TRAFFIC</text>
+      <text x="724" y="186">PACKETS: 9.4K</text>
+      <text x="724" y="244">RISK: ELEVATED</text>
+      <text x="724" y="302">BLOCK: READY</text>
+    </g>
+    <rect x="60" y="112" width="170" height="86" rx="16" fill="#aaf5d1"/>
+    <rect x="60" y="258" width="170" height="86" rx="16" fill="#ff9dc7"/>
+    <text x="91" y="164" fill="#080708" font-family="monospace" font-size="21" font-weight="900">DEVICE</text>
+    <text x="92" y="310" fill="#080708" font-family="monospace" font-size="21" font-weight="900">ALERT</text>
+  </g>
+</svg>

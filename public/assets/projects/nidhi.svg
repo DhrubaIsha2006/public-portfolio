@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+  <defs>
+    <linearGradient id="nidhiGlow" x1="0" x2="1" y1="0" y2="1">
+      <stop stop-color="#080708"/>
+      <stop offset=".48" stop-color="#20151f"/>
+      <stop offset="1" stop-color="#ff9dc7"/>
+    </linearGradient>
+    <filter id="grain">
+      <feTurbulence baseFrequency=".72" numOctaves="3"/>
+      <feColorMatrix type="saturate" values=".28"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="900" fill="url(#nidhiGlow)"/>
+  <rect width="1200" height="900" opacity=".13" filter="url(#grain)"/>
+  <circle cx="950" cy="170" r="260" fill="#aaf5d1" opacity=".16"/>
+  <circle cx="190" cy="720" r="310" fill="#ff9dc7" opacity=".18"/>
+  <g fill="#fff4df" font-family="Arial Black, sans-serif">
+    <text x="72" y="135" font-size="98">NIDHI</text>
+    <text x="78" y="190" font-size="24" letter-spacing="9">AGENTIC LENDING SYSTEM</text>
+  </g>
+  <g transform="translate(86 285)">
+    <rect width="316" height="360" rx="28" fill="#f3eadc"/>
+    <rect x="36" y="42" width="190" height="22" fill="#080708"/>
+    <rect x="36" y="98" width="244" height="18" fill="#ff9dc7"/>
+    <rect x="36" y="143" width="206" height="18" fill="#080708" opacity=".45"/>
+    <rect x="36" y="188" width="232" height="18" fill="#080708" opacity=".28"/>
+    <rect x="36" y="255" width="138" height="54" rx="27" fill="#080708"/>
+    <text x="65" y="290" fill="#fff4df" font-family="monospace" font-size="19" font-weight="700">APPROVE</text>
+    <rect x="432" y="42" width="584" height="316" rx="34" fill="#111113" stroke="#fff4df" stroke-width="5"/>
+    <path d="M500 284c90-120 162-74 236-150 95-97 170-80 245-8" fill="none" stroke="#aaf5d1" stroke-width="14" stroke-linecap="round"/>
+    <g fill="#fff4df" font-family="monospace" font-size="24" font-weight="700">
+      <text x="500" y="105">MASTER AGENT</text>
+      <text x="500" y="162">VERIFY</text>
+      <text x="710" y="162">UNDERWRITE</text>
+      <text x="500" y="220">SANCTION</text>
+    </g>
+  </g>
+</svg>
