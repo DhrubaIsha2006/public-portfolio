@@ -28,10 +28,12 @@ export default function SiteChrome({ children }) {
           <motion.a
             whileHover={{ scale: 1.04 }}
             whileTap={{ scale: 0.97 }}
-            href="#contact"
+            href="/assets/Dhrubaparna-Mazumder-Resume.pdf"
+            target="_blank"
+            rel="noreferrer"
             className="rounded-full bg-cream px-4 py-2 text-xs font-black uppercase tracking-[0.18em] text-ink"
           >
-            Signal
+            Resume
           </motion.a>
         </nav>
       </header>

@@ -1,6 +1,6 @@
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 
-export default function MagneticButton({ children, className = '', href, onClick, type = 'button' }) {
+export default function MagneticButton({ children, className = '', href, onClick, type = 'button', ...props }) {
   const x = useMotionValue(0);
   const y = useMotionValue(0);
   const springX = useSpring(x, { stiffness: 180, damping: 14 });
@@ -29,6 +29,7 @@ export default function MagneticButton({ children, className = '', href, onClick
       style={{ x: springX, y: springY, rotate }}
       whileTap={{ scale: 0.96 }}
       className={`inline-flex items-center justify-center rounded-full px-5 py-3 text-sm font-black uppercase tracking-[0.16em] transition focus:outline-none focus:ring-2 focus:ring-blush focus:ring-offset-2 focus:ring-offset-ink ${className}`}
+      {...props}
     >
       {children}
     </Component>

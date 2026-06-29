@@ -1,4 +1,119 @@
 export const projects = [
+{
+  title: 'NIDHI',
+  description:
+    'An agentic AI-powered lending platform that streamlines conversational loan journeys through governed underwriting, intelligent document verification, and real-time sanction generation for BFSI workflows.',
+  
+  techStack: [
+    'Next.js',
+    'React',
+    'Tailwind CSS',
+    'FastAPI',
+    'TypeScript',
+    'Python',
+    'Framer Motion'
+  ],
+
+  category: 'Featured',
+  
+  year: '2026',
+
+  images: ['/assets/projects/nidhi.svg'],
+
+  github: 'https://github.com/DhrubaIsha2006/nidhi-agentic-loan-platform',
+
+  liveDemo: 'https://example.com/nidhi',
+
+  awards: [
+    'EY Techathon 6.0 Semi-Finalist',
+    'Agentic AI BFSI Prototype'
+  ],
+
+  tags: [
+    'agentic-ai',
+    'fintech',
+    'bfsi',
+    'loan-automation',
+    'underwriting',
+    'nextjs',
+    'fastapi'
+  ],
+
+  role:
+    'Frontend developer, AI workflow designer, product strategist, backend integration contributor',
+
+  rotation: -4,
+
+  tape: 'cyan',
+
+  caseStudy: {
+    challenge:
+      'Digital lending journeys often suffer from slow manual verification, fragmented workflows, and ungoverned chatbot systems that cannot safely operate in regulated BFSI environments.',
+
+    approach:
+      'Designed NIDHI as a governed multi-agent lending platform where a Master Agent orchestrates underwriting, verification, conversational assistance, and sanction workflows. Built a cinematic Next.js frontend integrated with a FastAPI backend using deterministic rule-based loan decisioning for explainability and compliance.',
+
+    outcome:
+      'Created a functional BFSI prototype capable of handling both happy-path approvals and complex verification flows with conversational guidance, salary slip escalation, admin intervention support, and sanction-ready outputs.',
+
+    highlights: [
+      'Governed multi-agent architecture',
+      'Deterministic underwriting engine',
+      'Happy path & complex path workflows',
+      'Real-time conversational loan journey',
+      'Salary slip verification escalation',
+      'Admin dashboard for manual review',
+      'Session-aware backend orchestration',
+      'Sanction letter generation workflow'
+    ]
+  }
+},
+  {
+  title: 'ThreatEye-IoT',
+  description:
+    'A real-time Intrusion Detection & Prevention System (IDPS) designed for IoT environments that monitors network traffic, detects suspicious activity, and automatically blocks malicious devices.',
+  techStack: [
+    'Python',
+    'Flask',
+    'Scapy',
+    'Nmap',
+    'SocketIO',
+    'Wireshark',
+    'Tailwind CSS'
+  ],
+  category: 'Cybersecurity',
+  year: '2026',
+  images: ['/assets/projects/threateye-iot.svg'],
+  github: 'https://github.com/DhrubaIsha2006/ThreatEye-IoT',
+  liveDemo: 'https://example.com/threateye-iot',
+  awards: ['Hackathon Round 1 Selection'],
+  tags: [
+    'cybersecurity',
+    'iot',
+    'network security',
+    'intrusion detection',
+    'packet analysis'
+  ],
+  role:
+    'Backend developer, intrusion detection engineer, dashboard designer',
+  rotation: -4,
+  tape: 'cyan',
+  caseStudy: {
+    challenge:
+      'IoT devices in smart homes and local networks often lack proper security monitoring, making them vulnerable to intrusions, malware, and unauthorized traffic with little real-time visibility.',
+    approach:
+      'Built a lightweight local-first security system using Scapy for packet sniffing, Nmap for device discovery, Flask for dashboard visualization, and a smart-blocking mechanism to isolate suspicious devices in real time.',
+    outcome:
+      'Developed a working cybersecurity MVP capable of detecting suspicious traffic behavior, visualizing live network activity, and demonstrating automated threat isolation through an interactive dashboard.',
+    highlights: [
+      'Real-time packet sniffing',
+      'IoT device discovery',
+      'Smart auto-blocking system',
+      'Live Flask dashboard',
+      'Port-scan detection logic'
+    ]
+  }
+},
   {
     title: 'Aether Sustainability Dashboard',
     description:
@@ -7,7 +122,7 @@ export const projects = [
     category: 'Featured',
     year: '2026',
     images: ['/assets/projects/aether.svg'],
-    github: 'https://github.com/your-username/aether-dashboard',
+    github: 'https://github.com/DhrubaIsha2006/Aether',
     liveDemo: 'https://example.com/aether',
     awards: ['Best Data Storytelling Concept'],
     tags: ['sustainability', 'analytics', 'climate UX'],
@@ -32,7 +147,7 @@ export const projects = [
     category: 'Featured',
     year: '2025',
     images: ['/assets/projects/authority.svg'],
-    github: 'https://github.com/your-username/authority-dashboard',
+    github: 'https://github.com/DhrubaIsha2006/Authority-Dashboard',
     liveDemo: 'https://example.com/authority',
     awards: ['Smart India Hackathon Build'],
     tags: ['SIH', 'civic tech', 'dashboard'],
@@ -57,8 +172,8 @@ export const projects = [
     category: 'Game',
     year: '2024',
     images: ['/assets/projects/tictactoe.svg'],
-    github: 'https://github.com/your-username/tic-tac-toe',
-    liveDemo: 'https://example.com/tic-tac-toe',
+    github: 'https://github.com/DhrubaIsha2006/Tic-tac-toe',
+    liveDemo: ' https://tic-tac-toe-dhrubaisha2006s-projects.vercel.app/',
     awards: [],
     tags: ['game', 'interaction', 'logic'],
     role: 'Frontend developer',
