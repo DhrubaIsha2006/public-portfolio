@@ -11,14 +11,14 @@ export default function SiteChrome({ children }) {
 
       <header className="fixed left-0 right-0 top-0 z-40 px-4 py-4 sm:px-6">
         <nav className="mx-auto flex max-w-7xl items-center justify-between rounded-full border border-cream/10 bg-ink/55 px-4 py-3 shadow-glow backdrop-blur-xl">
-          <a href="#top" className="font-mono text-xs uppercase tracking-[0.35em] text-cream">
+          <a href="/#top" className="font-mono text-xs uppercase tracking-[0.35em] text-cream">
             DPM.exe
           </a>
           <div className="hidden items-center gap-1 md:flex">
             {navItems.map((item) => (
               <a
                 key={item}
-                href={`#${item.toLowerCase()}`}
+                href={`/#${item.toLowerCase()}`}
                 className="rounded-full px-3 py-2 text-xs uppercase tracking-[0.18em] text-cream/70 transition hover:bg-cream/10 hover:text-cream"
               >
                 {item}

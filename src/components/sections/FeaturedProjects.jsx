@@ -11,13 +11,17 @@ const curatedPlacements = {
     rotation: 1.8,
     frame: 'sm:translate-y-8 lg:translate-y-12'
   },
+  EcoVerse: {
+    rotation: -2,
+    frame: 'sm:translate-y-2 lg:-translate-y-2'
+  },
   'Aether Sustainability Dashboard': {
     rotation: -2.2,
-    frame: 'sm:translate-y-2 lg:-translate-y-3'
+    frame: 'sm:-translate-y-1 lg:translate-y-10'
   },
   'Authority Dashboard (SIH)': {
     rotation: 2.4,
-    frame: 'sm:-translate-y-2 lg:translate-y-10'
+    frame: 'sm:translate-y-8 lg:translate-y-2'
   },
   'Tic Tac Toe Game': {
     rotation: -1.7,
@@ -27,15 +31,15 @@ const curatedPlacements = {
     rotation: 1.5,
     frame: 'sm:translate-y-0 lg:translate-y-14'
   },
-  'Dhanvarsha Frontend Website': {
+  DhanVarsha: {
     rotation: 1.2,
-    frame: 'sm:translate-y-6 lg:translate-y-0'
+    frame: 'sm:-translate-y-1 lg:translate-y-14'
   },
   'Craft N Code Website': {
     rotation: -2.1,
     frame: 'sm:-translate-y-1 lg:translate-y-12'
   },
-  'Symptom Input UI Project': {
+  'Symptom UI': {
     rotation: 2,
     frame: 'sm:translate-y-7 lg:translate-y-3'
   }
@@ -52,7 +56,7 @@ function getPlacement(project, index) {
   return curatedPlacements[project.title] || fallbackPlacements[index % fallbackPlacements.length];
 }
 
-export default function FeaturedProjects({ onOpenProject }) {
+export default function FeaturedProjects() {
   return (
     <Section id="projects" eyebrow="featured projects" title="Pinned evidence of making things.">
       <div className="relative">
@@ -70,7 +74,6 @@ export default function FeaturedProjects({ onOpenProject }) {
                 <ProjectCard
                   project={project}
                   index={index}
-                  onOpen={onOpenProject}
                   rotation={placement.rotation}
                 />
               </div>

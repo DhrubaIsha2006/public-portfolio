@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { ArrowUpRight, Github } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const tapeColors = {
   mint: 'bg-mint/80',
@@ -9,7 +10,7 @@ const tapeColors = {
   cyan: 'bg-cyan-200/80'
 };
 
-export default function ProjectCard({ project, index, onOpen, rotation = project.rotation }) {
+export default function ProjectCard({ project, index, rotation = project.rotation }) {
   return (
     <motion.article
       initial={{ opacity: 0, y: 40, rotate: rotation }}
@@ -19,11 +20,10 @@ export default function ProjectCard({ project, index, onOpen, rotation = project
       whileHover={{ y: -16, rotate: rotation * 0.35, scale: 1.025 }}
       className="group relative"
     >
-      <button
-        type="button"
-        onClick={() => onOpen(project)}
+      <Link
+        to={`/projects/${project.id}`}
         className="polaroid-card block h-full w-full text-left focus:outline-none focus:ring-2 focus:ring-blush focus:ring-offset-4 focus:ring-offset-ink"
-        aria-label={`Open ${project.title} case study`}
+        aria-label={`Open ${project.title} project page`}
       >
         <span
           className={`absolute left-1/2 top-0 z-10 h-8 w-28 -translate-x-1/2 -translate-y-4 rotate-[-3deg] opacity-85 blur-[0.1px] ${
@@ -60,7 +60,7 @@ export default function ProjectCard({ project, index, onOpen, rotation = project
             {project.github && <Github className="h-4 w-4" aria-hidden="true" />}
           </div>
         </div>
-      </button>
+      </Link>
     </motion.article>
   );
 }
