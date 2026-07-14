@@ -41,6 +41,10 @@ export default function ProjectPage() {
   const previousProject = projects[(projectIndex - 1 + projects.length) % projects.length];
   const nextProject = projects[(projectIndex + 1) % projects.length];
   const heroImage = project.caseStudy.gallery[0]?.src || project.images[0];
+  const heroImageClass =
+    project.id === 'threateye-iot'
+      ? 'h-auto w-full object-contain transition duration-700 group-hover:scale-[1.015]'
+      : 'aspect-[16/10] w-full object-cover transition duration-700 group-hover:scale-[1.015]';
 
   return (
     <article className="min-h-screen pt-28">
@@ -65,7 +69,7 @@ export default function ProjectPage() {
             transition={{ duration: 0.75, ease: 'easeOut' }}
             className="grid items-end gap-9 lg:grid-cols-[0.95fr_1.05fr]"
           >
-            <div>
+            <div className="min-w-0">
               <p className="font-mono text-xs uppercase tracking-[0.32em] text-blush">{project.category}</p>
               <h1 className="mt-4 font-display text-[clamp(4rem,11vw,9rem)] uppercase leading-[0.8] text-cream">
                 {project.title}
@@ -105,14 +109,14 @@ export default function ProjectPage() {
               type="button"
               onClick={() => setLightboxImage(heroImage)}
               whileHover={{ y: -10, rotate: -1 }}
-              className="polaroid-card group w-full rotate-[1.5deg] text-left focus:outline-none focus:ring-2 focus:ring-blush focus:ring-offset-4 focus:ring-offset-ink"
+              className="polaroid-card group min-w-0 w-full rotate-[1.5deg] text-left focus:outline-none focus:ring-2 focus:ring-blush focus:ring-offset-4 focus:ring-offset-ink"
               aria-label={`Expand ${project.title} hero screenshot`}
             >
               <span className="absolute left-12 top-0 z-10 h-9 w-36 -translate-y-5 rotate-[-6deg] bg-blush/80" />
               <img
                 src={heroImage}
                 alt=""
-                className="aspect-[16/10] w-full object-cover transition duration-700 group-hover:scale-[1.015]"
+                className={heroImageClass}
               />
             </motion.button>
           </motion.div>
@@ -175,23 +179,23 @@ export default function ProjectPage() {
                 className="polaroid-card group block w-full rotate-[-0.6deg] focus:outline-none focus:ring-2 focus:ring-blush focus:ring-offset-4 focus:ring-offset-ink"
                 aria-label={`Expand ${image.caption}`}
               >
-               <img
-                src={image.src}
-                alt=""
-                className="w-full h-auto object-contain transition duration-700 group-hover:scale-[1.012]"
-              />
+                <img
+                  src={image.src}
+                  alt=""
+                  className="h-auto w-full object-contain transition duration-700 group-hover:scale-[1.012]"
+                />
               </button>
               <figcaption className="mt-5 text-center">
-  <h4 className="font-mono text-xs uppercase tracking-[0.28em] text-cream/60">
-    {image.caption}
-  </h4>
+                <h4 className="font-mono text-xs uppercase tracking-[0.28em] text-cream/60">
+                  {image.caption}
+                </h4>
 
-  {image.description && (
-    <p className="mx-auto mt-3 max-w-2xl text-sm leading-7 text-cream/75">
-      {image.description}
-    </p>
-  )}
-</figcaption>
+                {image.description && (
+                  <p className="mx-auto mt-3 max-w-2xl text-sm leading-7 text-cream/75">
+                    {image.description}
+                  </p>
+                )}
+              </figcaption>
               {index < project.caseStudy.gallery.length - 1 && (
                 <div className="mx-auto mt-10 h-12 w-px bg-gradient-to-b from-blush to-transparent" />
               )}

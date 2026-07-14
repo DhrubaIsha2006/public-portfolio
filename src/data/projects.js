@@ -134,24 +134,64 @@ const projectEntries = [
   {
     id: 'threateye-iot',
     title: 'ThreatEye-IoT',
+    subtitle: 'Real-Time IoT Intrusion Detection & Prevention System',
     shortDescription:
       'A real-time Intrusion Detection & Prevention System for IoT environments that monitors network traffic, detects suspicious activity, and automatically blocks malicious devices.',
-    technologies: ['Python', 'Flask', 'Scapy', 'Nmap', 'SocketIO', 'Wireshark', 'Tailwind CSS'],
+    technologies: [
+      'Python',
+      'Flask',
+      'Flask SQLAlchemy',
+      'Scapy',
+      'Nmap',
+      'SQLite',
+      'HTML',
+      'CSS',
+      'JavaScript',
+      'Tailwind CSS'
+    ],
     category: 'Cybersecurity',
     featured: true,
     status: 'MVP',
     year: '2026',
-    images: ['/assets/projects/threateye-iot.svg'],
+    images: ['/assets/projects/threateye/hero.png'],
     github: 'https://github.com/DhrubaIsha2006/ThreatEye-IoT',
-    demo: 'https://example.com/threateye-iot',
+    demo: '',
     awards: ['Hackathon Round 1 Selection'],
     tags: ['cybersecurity', 'iot', 'network security', 'intrusion detection', 'packet analysis'],
     role: 'Backend developer, intrusion detection engineer, dashboard designer',
+    keyFeatures: [
+      'Real-time IoT Device Discovery',
+      'Live Packet Analysis',
+      'Threat Detection Dashboard',
+      'Device Blocking Interface',
+      'Traffic Analytics',
+      'Security Operations Center (SOC)'
+    ],
+    timeline: [
+      {
+        phase: 'Round 1',
+        detail: 'Project idea, architecture planning and cybersecurity workflow design.'
+      },
+      {
+        phase: 'Round 2',
+        detail: 'Implemented Flask dashboard, packet monitoring and IoT device discovery.'
+      },
+      {
+        phase: 'Round 3',
+        detail: 'Refined SOC dashboard, improved UI and demonstrated the working prototype.'
+      }
+    ],
+    keyLearnings:
+      'ThreatEye-IoT strengthened my understanding of packet inspection, intrusion detection, Flask backend development, Scapy-based network analysis, dashboard engineering and cybersecurity workflows for local IoT environments.',
     rotation: -4,
     tape: 'cyan',
     caseStudy: {
+      overview:
+        'ThreatEye-IoT is a smart home security prototype for monitoring IoT devices on a local network. It combines packet inspection, device discovery, a real-time dashboard and threat visualization to help users understand suspicious activity as it happens.',
       challenge:
-        'IoT devices in smart homes and local networks often lack proper security monitoring, making them vulnerable to intrusions, malware, and unauthorized traffic with little real-time visibility.',
+        'Many IoT devices ship with limited security controls, and users rarely have a clear way to monitor what is happening on their local networks. Suspicious traffic, scans and unauthorized connections can go unnoticed because there is little visibility into device behavior.',
+      role:
+        'I designed the system architecture, built the Flask dashboard, integrated packet monitoring, implemented device discovery, developed threat visualization, improved the SOC dashboard UI and prepared the hackathon presentation.',
       approach:
         'Built a lightweight local-first security system using Scapy for packet sniffing, Nmap for device discovery, Flask for dashboard visualization, and a smart-blocking mechanism to isolate suspicious devices in real time.',
       outcome:
@@ -162,7 +202,46 @@ const projectEntries = [
         'Smart auto-blocking system',
         'Live Flask dashboard',
         'Port-scan detection logic'
+      ],
+      gallery: [
+        {
+          src: '/assets/projects/threateye/hero.png',
+          caption: 'Dashboard Overview',
+          description:
+            'Shows the central monitoring surface where network status, detected threats and security activity are summarized for quick review.'
+        },
+        {
+          src: '/assets/projects/threateye/devices.png',
+          caption: 'Connected Devices',
+          description:
+            'Demonstrates how discovered IoT endpoints are listed with network details so users can inspect what is connected to the local environment.'
+        },
+        {
+          src: '/assets/projects/threateye/alerts.png',
+          caption: 'Live Alerts',
+          description:
+            'Highlights the alerting workflow for suspicious traffic, helping users identify risky events without reading raw packet logs.'
+        },
+        {
+          src: '/assets/projects/threateye/activity.png',
+          caption: 'Recent Activity',
+          description:
+            'Documents the running event history so monitoring actions, detections and response updates can be reviewed chronologically.'
+        },
+        {
+          src: '/assets/projects/threateye/hero.png',
+          caption: 'Quick Actions',
+          description:
+            'Presents the control area for acting on suspicious devices, including security operations that support faster response during monitoring.'
+        },
+        {
+          src: '/assets/projects/threateye/traffic.png',
+          caption: 'Traffic Analytics',
+          description:
+            'Visualizes packet and traffic patterns to make abnormal network behavior easier to spot from the dashboard.'
+        }
       ]
+
     }
   },
   {
