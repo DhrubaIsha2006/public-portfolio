@@ -7,6 +7,7 @@
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
 }
 
@@ -14,10 +15,13 @@
   box-sizing: border-box;
 }
 
+html,
 body {
   margin: 0;
   min-width: 320px;
+  overflow-x: hidden;
   background: #080708;
+  color: #fff4df;
 }
 
 ::selection {
@@ -25,6 +29,13 @@ body {
   color: #080708;
 }
 
+/* Accessible focus ring style */
+:focus-visible {
+  outline: 2px solid #ff9dc7;
+  outline-offset: 3px;
+}
+
+/* Paper Texture Effect */
 .paper-texture {
   position: relative;
   overflow: hidden;
@@ -44,15 +55,16 @@ body {
   position: absolute;
 }
 
+/* Polaroid Scrapbook Card Styling */
 .polaroid-card {
   background: #f3eadc;
-  box-shadow: 0 26px 70px rgba(0, 0, 0, 0.38);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
   padding: 0.65rem;
   position: relative;
 }
 
 .polaroid-card::before {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.45), transparent 48%);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.5), transparent 48%);
   content: '';
   inset: 0;
   pointer-events: none;
@@ -66,23 +78,24 @@ body {
   border-radius: 999px;
   display: inline-flex;
   font-size: 0.75rem;
-  font-weight: 900;
+  font-weight: 800;
   gap: 0.5rem;
   letter-spacing: 0.16em;
-  padding: 0.7rem 1rem;
+  padding: 0.65rem 1rem;
   text-transform: uppercase;
-  transition: transform 180ms ease, background 180ms ease;
+  transition: transform 180ms ease, background 180ms ease, border-color 180ms ease;
 }
 
 .modal-link:hover,
 .social-link:hover {
   background: rgba(255, 157, 199, 0.22);
+  border-color: #ff9dc7;
   transform: translateY(-2px);
 }
 
 .social-link {
-  border-color: rgba(255, 244, 223, 0.15);
-  color: rgba(255, 244, 223, 0.78);
+  border-color: rgba(255, 244, 223, 0.18);
+  color: rgba(255, 244, 223, 0.85);
 }
 
 .contact-field {
@@ -90,31 +103,33 @@ body {
 }
 
 .contact-field span {
-  color: rgba(8, 7, 8, 0.55);
+  color: rgba(8, 7, 8, 0.65);
   display: block;
   font-family: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
   font-size: 0.72rem;
   font-weight: 800;
   letter-spacing: 0.22em;
-  margin-bottom: 0.55rem;
+  margin-bottom: 0.5rem;
   text-transform: uppercase;
 }
 
 .contact-field input,
 .contact-field textarea {
-  background: rgba(255, 244, 223, 0.78);
-  border: 1px solid rgba(8, 7, 8, 0.14);
+  background: rgba(255, 244, 223, 0.9);
+  border: 1px solid rgba(8, 7, 8, 0.16);
+  border-radius: 0.25rem;
   color: #080708;
   font: inherit;
   outline: none;
-  padding: 0.9rem 1rem;
+  padding: 0.85rem 1rem;
   width: 100%;
+  transition: border-color 180ms ease, box-shadow 180ms ease;
 }
 
 .contact-field input:focus,
 .contact-field textarea:focus {
   border-color: #ff4fad;
-  box-shadow: 0 0 0 3px rgba(255, 79, 173, 0.18);
+  box-shadow: 0 0 0 3px rgba(255, 79, 173, 0.25);
 }
 
 @media (prefers-reduced-motion: reduce) {

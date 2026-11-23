@@ -4,52 +4,28 @@ import Section from '../ui/Section.jsx';
 
 const curatedPlacements = {
   NIDHI: {
-    rotation: -1.4,
-    frame: 'sm:translate-y-0 lg:translate-y-0'
+    rotation: -1.8,
+    frame: 'translate-y-0'
+  },
+  SKRIM: {
+    rotation: 1.6,
+    frame: 'md:translate-y-4'
+  },
+  BREADCRUMB: {
+    rotation: -1.5,
+    frame: 'translate-y-0'
   },
   'ThreatEye-IoT': {
-    rotation: 1.8,
-    frame: 'sm:translate-y-8 lg:translate-y-12'
-  },
-  EcoVerse: {
-    rotation: -2,
-    frame: 'sm:translate-y-2 lg:-translate-y-2'
-  },
-  'Aether Sustainability Dashboard': {
-    rotation: -2.2,
-    frame: 'sm:-translate-y-1 lg:translate-y-10'
-  },
-  'Authority Dashboard (SIH)': {
-    rotation: 2.4,
-    frame: 'sm:translate-y-8 lg:translate-y-2'
-  },
-  'Tic Tac Toe Game': {
-    rotation: -1.7,
-    frame: 'sm:translate-y-8 lg:translate-y-2'
-  },
-  'Green AI Project': {
-    rotation: 1.5,
-    frame: 'sm:translate-y-0 lg:translate-y-14'
-  },
-  DhanVarsha: {
-    rotation: 1.2,
-    frame: 'sm:-translate-y-1 lg:translate-y-14'
-  },
-  'Craft N Code Website': {
-    rotation: -2.1,
-    frame: 'sm:-translate-y-1 lg:translate-y-12'
-  },
-  'Symptom UI': {
-    rotation: 2,
-    frame: 'sm:translate-y-7 lg:translate-y-3'
+    rotation: 1.9,
+    frame: 'md:translate-y-4'
   }
 };
 
 const fallbackPlacements = [
-  { rotation: -1.5, frame: 'sm:translate-y-0 lg:translate-y-0' },
-  { rotation: 1.8, frame: 'sm:translate-y-7 lg:translate-y-10' },
-  { rotation: -2.1, frame: 'sm:translate-y-1 lg:-translate-y-2' },
-  { rotation: 2.2, frame: 'sm:translate-y-6 lg:translate-y-12' }
+  { rotation: -1.6, frame: 'translate-y-0' },
+  { rotation: 1.7, frame: 'md:translate-y-4' },
+  { rotation: -1.5, frame: 'translate-y-0' },
+  { rotation: 1.8, frame: 'md:translate-y-4' }
 ];
 
 function getPlacement(project, index) {
@@ -58,18 +34,32 @@ function getPlacement(project, index) {
 
 export default function FeaturedProjects() {
   return (
-    <Section id="projects" eyebrow="featured projects" title="Pinned evidence of making things.">
+    <Section
+      id="projects"
+      eyebrow="featured projects"
+      title="Pinned evidence of making things."
+      className="relative"
+    >
       <div className="relative">
-        <div className="pointer-events-none absolute -left-6 top-20 hidden h-24 w-24 rotate-[-8deg] border border-cream/10 bg-cream/5 lg:block" />
-        <div className="pointer-events-none absolute -right-4 top-1/3 hidden h-20 w-28 rotate-[7deg] bg-blush/10 lg:block" />
-        <div className="grid items-start gap-x-7 gap-y-20 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-16 lg:grid-cols-3 lg:gap-x-10 lg:gap-y-24">
+        {/* Subtle Scrapbook Accents */}
+        <div
+          className="pointer-events-none absolute -left-8 top-12 hidden h-28 w-28 rotate-[-12deg] border border-cream/10 bg-cream/[0.03] lg:block"
+          aria-hidden="true"
+        />
+        <div
+          className="pointer-events-none absolute -right-6 top-1/2 hidden h-24 w-32 rotate-[9deg] bg-blush/[0.08] lg:block"
+          aria-hidden="true"
+        />
+
+        {/* 2x2 Balanced Editorial Grid */}
+        <div className="grid grid-cols-1 items-stretch gap-8 sm:gap-10 md:grid-cols-2 md:gap-x-10 md:gap-y-16 lg:gap-x-14 lg:gap-y-20">
           {featuredProjects.map((project, index) => {
             const placement = getPlacement(project, index);
 
             return (
               <div
-                key={project.title}
-                className={`relative transition-transform duration-500 ${placement.frame}`}
+                key={project.id}
+                className={`relative flex transition-transform duration-500 ${placement.frame}`}
               >
                 <ProjectCard
                   project={project}
